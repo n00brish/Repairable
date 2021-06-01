@@ -1,0 +1,99 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+<<<<<<< HEAD
+body{
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    background-color: #D6CECE;
+  }
+
+  .navbar{
+      width: 100%;
+      float: right;
+      border-bottom: solid 5px #303036;
+      
+  }
+  .tabField{
+      width:100%;
+      min-height: 50px;
+      background-color:#D6CECE;
+  } 
+
+  .tabField #logOutBtn{
+      float: right;
+      margin-right: 2%;
+      margin-top: 1%;
+      padding: 5px;
+      text-decoration: none;
+      color: #303036;
+
+  }
+  /* Style tab links */
+  .tab {  
+    background-color: transparent;
+    color:#303036,;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 1%;
+    font-size: 18px;
+    width: 12%;
+    border: solid #D6CECE;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: 0;
+  } 
+
+  .tab:hover {
+    background-color: #52535C;
+    color: white;
+  }
+  .tab:focus{
+      background-color: #303036;
+      color: white;
+  }
+ 
+ 
+   
+=======
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color: #d6cece;
+}
+
+.navbar {
+  width: 100%;
+  float: left;
+  border-bottom: solid 5px #303036;
+  display: inline-block;
+}
+.topField {
+  width: 50%;
+}
+/* Style tab links */
+.tab {
+  background-color: #d6cece;
+  color: #303036;
+  float: right;
+  outline: none;
+  cursor: pointer;
+  padding: 1%;
+  font-size: 18px;
+  width: 18%;
+}
+.tab:hover {
+  background-color: #52535c;
+  color: white;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: flex;
+  padding: 100px 20px;
+  height: 100%;
+}
+>>>>>>> e7d399c75cdf4ddfdaa29776330e1c4d3f25cab2

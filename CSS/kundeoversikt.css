@@ -1,0 +1,142 @@
+/*Mobile code */
+
+.col-xs-12{
+    grid-column: auto / span 12;
+}
+
+
+/*
+Media queries
+*/
+
+/*Tablet*/
+
+@media (min-width: 760px){
+    
+    .col-md-12{
+        grid-column: auto / span 12;
+    }
+    
+    .col-md-6{
+        grid-column: auto / span 6;
+    }
+}
+
+/*Smallest desktop>992px
+12, col, 6 col, 4 col (article default)
+*/
+
+@media (min-width: 992px){
+    .col-lg-12{
+        grid-column: auto / span 12;
+    }
+    .col-lg-6{
+        grid-column: auto / span 6;
+    }
+    .col-lg-4{
+        grid-column: auto / span 4;
+    }
+}
+.img-fluid{
+    width: 100%; 
+}
+
+/*BANNER*/
+#main-banner{
+    height: 150px;
+    background-color: gray;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.banner-slogan{
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+/*søkefelt*/
+#search{
+    background-color: lightgrey;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#search p{
+    text-align: center;
+    font-family: sans-serif;
+}
+form.example input[type=text] {
+    position: relative;
+    width: 60%;
+    height: 80%;
+    margin-bottom: 10px;
+    left: 20%;
+    padding: 5px;
+}
+/*bestillingsboks*/
+#bestillingsskjema{
+    position: relative;
+    left: 10px;
+    background-color: lightgrey;
+    height: 600px;
+    width: 330px;
+    float: left;
+    margin-right: 10px;
+}
+#bestillingsskjema h3{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+#bestillingsskjema input{
+    position: relative;
+    left: 30%;
+    background-color: dimgray;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+
+
+/*MAIN CONTENT*/
+#main-content-grid{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 1rem;
+    width: 70%;
+    height: 40%;
+    margin-right: 40px;
+    float: right;
+}
+
+
+
+#main-content-grid article{
+    border: solid dimgray 1px;
+
+}
+#main-content-grid input{
+    position: relative;
+    left: 40%;
+    background-color: lightgrey;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    height: 30px;
+    width: 70px;
+    margin-bottom: 8px;
+}
+#main-content-grid h3{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}

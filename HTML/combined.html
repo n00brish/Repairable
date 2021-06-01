@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/CSS/combined.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>ReUsable</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="tabField">
+            <a id="logOutBtn" href="/HTML/login.html">Logg ut</a>
+        </div>
+        <button class="tab" onclick="openPage(this, '#303036', '#FFFFFF')" id="defaultOpen">Kunder</button>
+            <button class="tab"onclick="openPage(this, '#303036', '#FFFFFF')">Produkter</button>
+            <button class="tab" onclick="openPage(this, '#303036','#FFFFFF')">Lagerstatus</button>
+            <button class="tab" onclick="openPage(this,'#303036','#FFFFFF') ">Innstillinger</button> 
+    </div>    
+    <div class="mainContent">
+        <form class="form-group"></form>
+        <div>
+        <label class="font-weight-bold"></label>
+        <input
+          type="text"
+          class="form-control form-control-sg"
+          id="exampleFirstname"
+          placeholder="Kundenummer "
+        /> 
+        <div>
+        <label class="font-weight-bold"></label>
+        <input
+          type="text"
+          class="form-control form-control-sg"
+          id="exampleFirstname"
+          placeholder="Fornavn"
+        />
+        </div>
+        <div>
+            <label class="font-weight-bold"></label>
+            <input
+            type="text"
+            class="form-control form-control-sg"
+            id="exampleSurname"
+            placeholder="Etternavn"
+        />
+        </div>
+        <div>
+            <label class="font-weight-bold"></label>
+            <input
+            type="text"
+            class="form-control form-control-sg"
+            id="exampleEmail"
+            placeholder="Epost"
+        />
+        </div>
+        <div>
+            <label class="font-weight-bold"></label>
+            <input 
+            type="text" 
+            class="form-control form-control-sg" 
+            id="examplePhoneNumber" placeholder="Telefonnummer">
+        </select>
+        </div>
+        <div>
+            <label class="font-weight-bold"></label>
+            <input 
+            type="date" 
+            class="form-control form-contro-sg" 
+            id="exampleDate" placeholder="Fra dato: ">
+        </div>
+        <div>
+            <label class="font-weight-bold"></label>
+            <input 
+            type="date" 
+            class="form-control form-contro-sg" 
+            id="exampleDate" placeholder="Til dato: ">
+        </div>
+        <br><br><br>
+        <div class="saveBtn">
+            <a href="#" type="button" class="btn btn-sg btn pt-1 font-weight-bold">Lagre bestilling</a>
+        </div>
+        <br>
+    </form>
+    </div>
+    <!--<script src="/JS/navbar.js"></script>    -->
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!-- Search form -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Produkt søk</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+        <link rel="stylesheet" type="text/css" href="../CSS/saleForm.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../JS/navbar.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="topField"></div>
+      <a href="kundeoversikt.html"
+        ><button class="tab" onclick="openPage('costumers', this, '#303036')">
+          Kunder
+        </button></a
+      >
+      <a href="Search.html"
+        ><button class="tab" onclick="openPage('products', this, '#303036')">
+          Produkter
+        </button></a
+      >
+      <button class="tab" onclick="openPage('stock', this, '#303036')">
+        Lagerstatus
+      </button>
+      <button class="tab" onclick="openPage('settings', this, '#303036')">
+        Innstillinger
+      </button>
+    </div>
+        <form class="form-group">
+          <div>
+            <label class="font-weight-bold">Fornavn</label>
+            <input type="text" class="form-control form-control-sg" id="exampleFirstname" placeholder="" />
+          </div>
+          <div>
+            <label class="font-weight-bold">Etternavn</label>
+            <input type="text" class="form-control form-control-sg" id="exampleSurname" placeholder="" />
+          </div>
+          <div>
+            <label class="font-weight-bold">Email</label>
+            <input type="text" class="form-control form-control-sg" id="exampleEmail" placeholder="" />
+          </div>
+          <div>
+            <label class="font-weight-bold">Telefonnummer</label>
+            <input type="text" class="form-control form-control-sg" id="examplePhoneNumber" placeholder="">
+            </select>
+          </div>
+          <div>
+            <label class="font-weight-bold">Fra dato</label>
+            <input type="date" class="form-control form-contro-sg" id="exampleDate" placeholder="">
+          </div>
+          <div>
+            <label class="font-weight-bold">Til dato</label>
+            <input type="date" class="form-control form-contro-sg" id="exampleDate" placeholder="">
+          </div>
+          <br>
+          <div>
+            <a href="#" type="button" class="btn btn-sg btn pt-1 font-weight-bold">Lagre Bestilling</a>
+          </div>
+        </form>
+
+    <div class="container mr-4 mt-0">
+      <h2>Produkt søk:</h2>
+      <p>Søk etter produkter:</p>
+      <input
+        class="form-control"
+        id="myInput"
+        type="text"
+        placeholder="Search.. (produkt id/ produkt navn/ status)"
+      />
+      <br />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm bg-success">
+            <h3>Klar til utleie</h3>
+          </div>
+          <div class="col-sm bg-warning">
+            <h3>Til rens</h3>
+          </div>
+          <div class="col-sm bg-danger">
+            <h3>Utleid</h3>
+          </div>
+          <div class="col-sm bg-primary">
+            <h3>Reservert</h3>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Atrikkelnummer</th>
+            <th>Produkt ID</th>
+            <th>Produkt navn</th>
+            <th>Merke</th>
+            <th>Status</th>
+            <th>Retur</th>
+            <th>Klar til utleie</th>
+          </tr>
+        </thead>
+        <tbody id="myTable">
+          <tr>
+            <td>1111 0000</td>
+            <td>4</td>
+            <td>JPRCALI BLAZER</td>
+            <td>Jack &amp; Jones</td>
+            <td class="table-warning">Til rens</td>
+            <td></td>
+            <td>11.12.20, 12:00</td>
+          </tr>
+          <tr>
+            <td>2222 0000</td>
+            <td>3</td>
+            <td>dress - blue</td>
+            <td>Calvin Klein Tailored</td>
+            <td class="table-warning">Til rens</td>
+            <td></td>
+            <td>11.12.20, 12:00</td>
+          </tr>
+          <tr>
+            <td>3333 0000</td>
+            <td>1</td>
+            <td>Dooley</td>
+            <td>Jack &amp; Jones;</td>
+            <td class="table-danger">Utleid</td>
+            <td>20:00, 11.12.19</td>
+            <td>18.12.20, 12:00</td>
+          </tr>
+          <tr>
+            <td>4444 0000</td>
+            <td>2</td>
+            <td>Luke</td>
+            <td>Tiger of Sweden</td>
+            <td class="table-primary">Resertvert til 20.00</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1198 0000</td>
+            <td>4</td>
+            <td>Genser mann</td>
+            <td>Jack &amp; Jones</td>
+            <td class="table-warning">Til rens</td>
+            <td></td>
+            <td>11.12.20, 12:00</td>
+          </tr>
+          <tr class="table-success">
+            <td>1158 0000</td>
+            <td>5</td>
+            <td>Sykt kul jakke</td>
+            <td>Jack &amp; Jones</td>
+            <td>Klar til utleie</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-warning">
+            <td>1167 0000</td>
+            <td>6</td>
+            <td>Jalla plagg</td>
+            <td>HH</td>
+            <td>Til rens</td>
+            <td></td>
+            <td>11.12.20, 12:00</td>
+          </tr>
+          <tr class="table-success">
+            <td>1189 0000</td>
+            <td>7</td>
+            <td>BLAZER</td>
+            <td>Jack &amp; Jones</td>
+            <td>Klar til utleie</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-warning">
+            <td>1111 0000</td>
+            <td>8</td>
+            <td>JPRCALI BLAZER</td>
+            <td>Jack &amp; Jones</td>
+            <td>Til rens</td>
+            <td></td>
+            <td>11.12.20, 12:00</td>
+          </tr>
+          <tr class="table-success">
+            <td>1158 0000</td>
+            <td>5</td>
+            <td>Sykt kul bukse</td>
+            <td>levi</td>
+            <td>Klar til utleie</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="table-success">
+            <td>1158 0000</td>
+            <td>5</td>
+            <td>Kul jakke</td>
+            <td>Jack &amp; Jones</td>
+            <td>Klar til utleie</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--Note that we start the search in tbody, to prevent filtering the table headers.-->
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $("#myInput").on("keyup", function() {
+          var value = $(this)
+            .val()
+            .toLowerCase();
+          $("#myTable tr").filter(function() {
+            $(this).toggle(
+              $(this)
+                .text()
+                .toLowerCase()
+                .indexOf(value) > -1
+            );
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

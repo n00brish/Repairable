@@ -1,0 +1,85 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D6E0E9;
+  }
+
+  .navbar{
+      width: 100%;
+      float: right;
+      border-bottom: solid 5px #303036;
+      font-family: 'Montserrat', sans-serif; 
+      background: #E3DFCC;      
+  }
+ 
+  .tabField{
+      width:100%;
+      min-height: 50px;
+      background-color:#E3DFCC;
+      border-bottom: soli
+  } 
+
+  .tabField #logOutBtn{
+      float: right;
+      margin-right: 2%;
+      margin-top: 1%;
+      padding: 5px;
+      text-decoration: none;
+      color: #303036;
+
+  }
+  /* Style tab links */
+  .tab {  
+    background-color: transparent;
+    color:#303036;
+    outline: none;
+    cursor: pointer;
+    padding: 1%;
+    font-size: 18px;
+    width: 17%;
+    border: solid 1px #D6E0E9;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: 0;
+    margin-bottom: 0;
+  } 
+  .tab:hover {
+    background-color: #52535C;
+    color: white;
+  }
+  .tab:focus{
+      background-color: #303036;
+      color: white;
+      outline: none;
+  }
+  .mainContent {
+    font-family: 'Montserrat', sans-serif;  
+    background: #E3DFCC;  
+    width: 25%;
+    margin-left: 0;
+    margin-top: 8.8%;
+    position: fixed; 
+    border-right: solid 0.3rem #303036;
+    border-top: solid 5pc
+    text-align: center;
+  }
+  input{
+    text-align: center;
+  }
+  #exampleDate input{
+      padding-left:200px;
+
+  }
+  .saveBtn{
+      text-align: center;
+      width: fit-content;
+      margin-left: 25% ;
+  }
+  .saveBtn a{
+    
+     
+    
+  }
+ 
